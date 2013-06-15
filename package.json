@@ -1,0 +1,28 @@
+{
+  "name": "bling_bling",
+  "version": "0.0.1",
+  "description": "My alternative to HTML.",
+  "main": "lib/b_b.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/da99/bling_bling.git"
+  },
+  "keywords": [
+    "da99"
+  ],
+  "dependencies": {
+    "escape_escape_escape": "x.x.x"
+  },
+  "devDependencies" : {
+  },
+  "author": "da99",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "ab689294fc374870c82a7c27f595b8cd3d11d688"
+}
