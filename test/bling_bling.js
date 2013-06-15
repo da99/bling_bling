@@ -66,8 +66,8 @@ describe( 'Links', function () {
 describe( 'Quote', function () {
 
   it( 'generates blockquotes: Quote: ....', function () {
-    var p = BB.new("Quote:\nHello and goodbye.\nEnd Quote.");
-    assert.equal(p.to_html(), "<blockquote>Hello and goodbye.</blockquote>");
+    var p = BB.new("Quote:\nHello \nand\n goodbye.\nEnd Quote.");
+    assert.equal(p.to_html(), "<blockquote>Hello \nand\n goodbye.</blockquote>");
   });
 
 }); // === end desc
