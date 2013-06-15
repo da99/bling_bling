@@ -21,6 +21,23 @@ describe( 'Paragraphs/Blocks', function () {
 
 }); // === end desc
 
+describe( 'Combinations', function () {
+
+  it( 'generates: section, block', function () {
+    var p = BB.new("Section: Greeting\n \nHello\n");
+    assert.equal(p.to_html(), "<h3>Greeting</h3>\n<div class=\"p\">Hello</div>" );
+  });
+
+  it( 'generates: section, block, block', function () {
+    var p = BB.new("Section: Greeting\n \nHello\n \nGoodbye");
+    assert.equal(p.to_html(), [
+                 "<h3>Greeting</h3>",
+                 "<div class=\"p\">Hello</div>",
+                 "<div class=\"p\">Goodbye</div>"
+    ].join("\n"));
+  });
+
+}); // === end desc
 
 
 
