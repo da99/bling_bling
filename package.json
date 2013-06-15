@@ -1,6 +1,6 @@
 {
   "name": "bling_bling",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My alternative to HTML.",
   "main": "lib/b_b.js",
   "directories": {
@@ -19,8 +19,7 @@
   "dependencies": {
     "escape_escape_escape": "x.x.x"
   },
-  "devDependencies" : {
-  },
+  "devDependencies": {},
   "author": "da99",
   "license": "MIT",
   "readmeFilename": "README.md",
