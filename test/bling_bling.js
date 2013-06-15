@@ -63,6 +63,15 @@ describe( 'Links', function () {
 
 }); // === end desc
 
+describe( 'Quote', function () {
+
+  it( 'generates blockquotes: Quote: ....', function () {
+    var p = BB.new("Quote:\nHello and goodbye.\nEnd Quote.");
+    assert.equal(p.to_html(), "<blockquote>Hello and goodbye.</blockquote>");
+  });
+
+}); // === end desc
+
 describe( 'Combinations', function () {
 
   it( 'generates: section, block', function () {
