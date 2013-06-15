@@ -21,6 +21,20 @@ describe( 'Paragraphs/Blocks', function () {
 
 }); // === end desc
 
+describe( 'italics', function () {
+
+  it( 'generates italics from: /text/', function () {
+    var p = BB.new("\nMy link: /txt/\n");
+    assert.equal(p.to_html(), "<div class=\"p\">My link: <em>txt</em></div>" );
+  });
+
+  it( 'ignores invalid strongs: //text//', function () {
+    var p = BB.new("\nMy link: //txt//\n");
+    assert.equal(p.to_html(), "<div class=\"p\">My link: //txt//</div>" );
+  });
+
+}); // === end desc
+
 describe( 'Strong', function () {
 
   it( 'generates strongs from: *text*', function () {
